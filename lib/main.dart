@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/rendering.dart';
+
 import './product_manager.dart';
 
-void main() => runApp(new MyApp());
+void main() {
+//  debugPaintBaselinesEnabled = true;
+//  debugPaintSizeEnabled = true;
+//  debugPaintPointersEnabled = true;
+  runApp(new MyApp());
+}
 
 //stateless cuando no se este manejando ningun estado
 class MyApp extends StatelessWidget {
