@@ -25,8 +25,10 @@ class Products extends StatelessWidget {
         itemCount: products.length,
       );
     }else {
-      productCard = Center(child: Text("No hay productos"),
-      );
+      productCard = Center(child: Text("No hay productos"),);
+      //si no se quiere mostrar nada cuando la lista este vacia se puede retornar un contenedor vacio
+      //para no retornar un null
+//      productCard = Container();
     }
     return productCard;
   }
